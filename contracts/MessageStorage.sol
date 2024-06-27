@@ -5,8 +5,6 @@ contract MessageStorage {
     string public message;
     address public owner;
 
-    event Withdrawal(uint amount, uint when);
-
     constructor(string memory __message) payable {
         owner = msg.sender;
         message = __message;

@@ -5,7 +5,7 @@ contract MessageStorage {
     string public message;
     address public owner;
 
-    constructor(string memory __message) payable {
+    constructor(string memory __message) {
         owner = msg.sender;
         message = __message;
     }
